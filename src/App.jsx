@@ -1,9 +1,13 @@
 import { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './views/Home'
 
 function App() {
   return (
     <>
-      <h1 className='text-center p-2'>Bienvenido a Taski</h1>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
     </>
   )
 }
