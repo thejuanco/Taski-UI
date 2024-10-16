@@ -2,6 +2,7 @@ import React from 'react'
 import "material-symbols";
 import { Link } from 'react-router-dom';
 import NavBar from '../components/Home/NavBar'
+import Characteristics from '../components/Home/Characteristics';
 
 const Home = () => {
   return (
@@ -40,6 +41,8 @@ const Home = () => {
               </Link>
             </div>
           </div>
+          {/*Componentes*/}
+          <Characteristics />
         </div>
       </div>
     </>
