@@ -41,7 +41,7 @@ const Login = () => {
               </button>
             </form>
             <div className="flex flex-row justify-between">
-              <Link to="/signup">¿No tienes una cuenta?</Link>
+              <Link to="/auth/signup">¿No tienes una cuenta?</Link>
               <Link to="/auth/forgot-password">Olvide mi contraseña</Link>
             </div>
             <div className="flex items-center justify-between mb-6 mt-6">
