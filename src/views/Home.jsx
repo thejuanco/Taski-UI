@@ -2,6 +2,7 @@ import React from 'react'
 import "material-symbols";
 import { Link } from 'react-router-dom';
 import NavBar from '../components/Home/NavBar'
+import Characteristics from '../components/Home/Characteristics';
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
 
             <div className="flex justify-center mt-8 space-x-2">
               <Link
-                to="/signup"
+                to="/auth/signup"
                 className="bg-gray-800 text-white py-2 px-6 rounded-lg hover:bg-gray-700 flex items-center transition hover:delay-150 duration-300 ease-in-out"
               >
                 Comieza ahora
@@ -40,6 +41,8 @@ const Home = () => {
               </Link>
             </div>
           </div>
+          {/*Componentes*/}
+          <Characteristics />
         </div>
       </div>
     </>

@@ -9,9 +9,14 @@ const Signin = () => {
       <div>
         <NavBar />
         <div className="flex justify-center items center">
-          <div className="mt-16 w-1/4">
-            <div className="bg-blue-300 w-full mb-3 py-2 text-center rounded-lg" id="addNewUi">
-                <p className="text-blue-700 font-semibold">Espera pronto nuestro nuevo diseño</p>
+          <div className="mt-12 w-1/4">
+            <div className="flex justify-center items-center hover:blur-xs">
+              <div className="bg-blue-300 w-4/5 mb-3 py-1 text-center rounded-3xl flex flex-row space-x-2" id="addNewUi">
+                <div className="bg-blue-700 rounded-3xl px-1 ml-1">
+                  <p className="text-sm text-blue-200">Nuevo</p>
+                </div>
+                  <p className="text-blue-700 text-sm font-semibold">Espera pronto nuestro nuevo diseño</p>
+              </div>
             </div>
             <h1 className="text-black font-semibold text-2xl">
               Colabora como nunca antes
