@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import NavBar from '../components/Home/NavBar'
 import Characteristics from '../components/Home/Characteristics';
 import Start from '../components/Home/Start';
+import Footer from '../components/Home/Footer';
 
 const Home = () => {
   return (
@@ -46,6 +47,7 @@ const Home = () => {
           <Characteristics />
           <Start />
         </div>
+        <Footer />
       </div>
     </>
   );
