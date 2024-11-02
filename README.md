@@ -8,6 +8,10 @@ con React, Vite, Tailwind, y tiene como proposito una experiencia de usuario flu
 - Formulario de registro y login: Interfaces visuales para registrar y autenticar usuarios en la plataforma.
 - Navegación dinámica: Menús interactivos para una navegación rápida y eficaz entre las distintas secciones de la aplicación.
 
+### Link
+Para acceder a Taski da click al siguiente enlace
+https://adorable-haupia-daa8f7.netlify.app/
+
 ### Instalación
     git clone https://github.com/thejuanco/Taski-UI.git
     cd Taski-UI
