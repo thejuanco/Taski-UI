@@ -5,6 +5,7 @@ import NavBar from '../components/Home/NavBar'
 import Characteristics from '../components/Home/Characteristics';
 import Start from '../components/Home/Start';
 import Footer from '../components/Home/Footer';
+import Features from '../components/Home/Features';
 
 const Home = () => {
   return (
@@ -45,6 +46,7 @@ const Home = () => {
           </div>
           {/*Componentes*/}
           <Characteristics />
+          <Features />
           <Start />
         </div>
         <Footer />
