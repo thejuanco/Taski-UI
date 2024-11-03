@@ -1,8 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import NavBar from '../../components/Auth/NavBar'
+import { useForm } from 'react-hook-form';
 
 const Login = () => {
+
+  const { 
+    register, 
+    handleSubmit,
+    formState: { errors },
+    watch
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  }
+
   return (
     <>
       <div>
@@ -15,7 +28,7 @@ const Login = () => {
             <h1 className="text-gray-500 text-2xl font-semibold ">
               Inicia Sesión en Taski
             </h1>
-            <form className="mt-10 mb-6">
+            <form onSubmit={handleSubmit(onSubmit)} className="mt-10 mb-6">
               <div className="space-y-4">
                 <div className="space-y-2">
                   <label className="font-semibold" htmlFor="email">
@@ -24,6 +37,7 @@ const Login = () => {
                   <input
                     className="w-full p-2 rounded-lg border"
                     placeholder="Ingresa tu apellido"
+                    {...register('email', { required: true })}
                   />
                 </div>
                 <div className="space-y-2">
@@ -33,6 +47,7 @@ const Login = () => {
                   <input
                     className="w-full p-2 rounded-lg border"
                     placeholder="Ingresa tu apellido"
+                    {...register('password', { required: true })}
                   />
                 </div>
               </div>
