@@ -12,7 +12,9 @@ const Features = () => {
                         Conoce sobre nosotros
                     </h1>
                     <img src="img/working_re.svg" alt="Imagen productiva" className='w-96 h-96'/>
-                    <Link className='bg-neutral-100 font-semibold rounded-xl px-6 py-3 mx-4 hover:bg-neutral-200 flex items-center justify-center'>
+                    <Link
+                        to="/aboutUs" 
+                        className='bg-neutral-100 font-semibold rounded-xl px-6 py-3 mx-4 hover:bg-neutral-200 flex items-center justify-center'>
                         Todos los productos
                         <span className="material-symbols-rounded ml-2">
                             arrow_right_alt
@@ -21,8 +23,10 @@ const Features = () => {
                 </div>
                 <div className='bg-slate-200 rounded-xl p-4 hover:shadow-md'>
                     <div className='flex flex-row justify-between items-center mx-4'>
-                        <h1 className='text-3xl text-gray-800 font-semibold'>Conoce nuestro blog</h1>
-                        <Link className='flex items-center justify-center rounded-full bg-white w-10 h-10 hover:shadow-md'>
+                        <h1 className='text-3xl text-gray-800 font-semibold'>Visita nuestro blog</h1>
+                        <Link
+                            to="/blog" 
+                            className='flex items-center justify-center rounded-full bg-white w-10 h-10 hover:shadow-md'>
                             <span className="material-symbols-rounded text-gray-800">
                                 chevron_right
                             </span>
