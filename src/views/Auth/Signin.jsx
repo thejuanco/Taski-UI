@@ -1,8 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../../components/Auth/NavBar";
+import { useForm } from "react-hook-form";
 
 const Signin = () => {
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    watch
+  } = useForm();
+
+  const onSubmit = data => console.log(data);
 
   return (
     <>
@@ -24,7 +34,7 @@ const Signin = () => {
             <h1 className="text-gray-500 text-2xl font-semibold ">
               Inicia Sesión en Taski
             </h1>
-            <form className="mt-10 mb-6">
+            <form onSubmit={handleSubmit(onSubmit)} className="mt-10 mb-6">
               <div className="space-y-4">
               <div className="space-y-2">
                   <label className="font-semibold" htmlFor="name">
@@ -34,16 +44,18 @@ const Signin = () => {
                     name="name"
                     type="text"
                     className="w-full p-2 rounded-lg border"
-                    placeholder="Ingresa tu apellido"
+                    placeholder="Tu nombre"
+                    {...register('name', {required: true})}
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="font-semibold" htmlFor="email">
+                  <label className="font-semibold" htmlFor="lastName">
                     Apellido*
                   </label>
                   <input
                     className="w-full p-2 rounded-lg border"
                     placeholder="Ingresa tu apellido"
+                    {...register('lastName', {required: true})}
                   />
                 </div>
                 <div className="space-y-2">
@@ -52,16 +64,19 @@ const Signin = () => {
                   </label>
                   <input
                     className="w-full p-2 rounded-lg border"
-                    placeholder="Ingresa tu apellido"
+                    placeholder="Ingresa tu correo"
+                    {...register('email', {required: true})}
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="font-semibold" htmlFor="email">
+                  <label className="font-semibold" htmlFor="password">
                     Contraseña*
                   </label>
                   <input
                     className="w-full p-2 rounded-lg border"
-                    placeholder="Ingresa tu apellido"
+                    placeholder="***********"
+                    type="password"
+                    {...register('password', {required: true})}
                   />
                 </div>
               </div>
