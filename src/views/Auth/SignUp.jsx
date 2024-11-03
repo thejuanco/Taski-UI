@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../../components/Auth/NavBar";
 import { useForm } from "react-hook-form";
 
-const Signin = () => {
+const SignUp = () => {
 
   const {
     register,
@@ -99,4 +99,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default SignUp;
