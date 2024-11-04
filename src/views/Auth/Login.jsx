@@ -20,8 +20,8 @@ const Login = () => {
     <>
       <div>
         <NavBar />
-        <div className="flex justify-center items center">
-          <div className="mt-16 w-1/4">
+        <div className="flex justify-center items-center">
+          <div className="mt-16 md:w-1/4 sm:w-1/2 sm:m-10">
             <h1 className="text-black font-semibold text-2xl">
               Colabora como nunca antes
             </h1>
