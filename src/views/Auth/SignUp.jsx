@@ -18,10 +18,10 @@ const SignUp = () => {
     <>
       <div>
         <NavBar />
-        <div className="flex justify-center items center">
-          <div className="mt-12 w-1/4">
+        <div className="flex justify-center items-center">
+          <div className="mt-12 md:w-1/4 sm:w-1/2 sm:m-10">
             <div className="flex justify-center items-center hover:blur-xs">
-              <div className="bg-blue-300 w-4/5 mb-3 py-1 text-center rounded-3xl flex flex-row space-x-2" id="addNewUi">
+              <div className="bg-blue-300 md:w-4/5 mb-3 py-1 text-center rounded-3xl flex flex-row space-x-2" id="addNewUi">
                 <div className="bg-blue-700 rounded-3xl px-1 ml-1">
                   <p className="text-sm text-blue-200">Nuevo</p>
                 </div>
