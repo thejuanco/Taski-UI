@@ -6,9 +6,9 @@ const Footer = () => {
     <>
       <div className="bg-slate-200 mt-32">
         <div className="p-8">
-          <div className="grid grid-cols-3 p-2">
+          <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-2 p-2">
             <div className="space-y-2">
-              <h2 className="font-bold text-lg">Taski</h2>
+              <h2 className="font-bold text-3xl">Taski</h2>
               <p className="text-gray-600">
                 Simplificando la gestión de tareas y proyectos para equipos de
                 todos los tamaños

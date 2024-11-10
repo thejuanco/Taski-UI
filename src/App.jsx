@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './views/Home'
-import NotFound from './NotFound'
+import NotFound from './views/NotFound'
 import Login from './views/Auth/Login'
 import SignUp from './views/Auth/SignUp'
 import ForgotPassword from './views/Auth/ForgotPassword'
