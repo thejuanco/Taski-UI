@@ -7,7 +7,7 @@ const Characteristics = () => {
         <h1 className="text-center font-bold text-3xl">
           Caracteristicas que impulsan tu productividad
         </h1>
-        <div className="grid grid-cols-4 mx-8 mt-8 space-x-8">
+        <div className="grid md:grid-cols-4 sm:grid-cols-2 mx-8 mt-8 sm:space-x-2 sm:space-y-2 md:space-x-8">
           <div className="border-2 rounded-lg px-6 h-48 flex flex-col justify-center items-center shadow-sm">
             <img src="icons/tarea-lista.svg" alt="Estadisticas" />
             <h2 className="text-center font-semibold text-2xl">
