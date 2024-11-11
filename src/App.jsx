@@ -6,6 +6,7 @@ import Login from './views/Auth/Login'
 import SignUp from './views/Auth/SignUp'
 import ForgotPassword from './views/Auth/ForgotPassword'
 import SendEmail from './views/Auth/SendEmail'
+import ConfirmUser from './views/Auth/ConfirmUser'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/auth/forgot-password' element={<ForgotPassword/>}/>
         <Route path='/auth/signup' element={<SignUp/>}/>
         <Route path='/auth/send-email' element={<SendEmail/>}/>
+        <Route path='/auth/confirm-user/:token' element={<ConfirmUser/>}/>
       </Routes>
     </>
   )
