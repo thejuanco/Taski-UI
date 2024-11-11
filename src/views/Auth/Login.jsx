@@ -59,7 +59,7 @@ const Login = () => {
               <Link to="/auth/signup">¿No tienes una cuenta?</Link>
               <Link to="/auth/forgot-password">Olvide mi contraseña</Link>
             </div>
-            <div className="flex items-center justify-between mb-6 mt-6">
+            <div className="flex items-center justify-between mb-6 mt-4">
               <div className="border-t border-gray-300 w-1/2"></div>
               <span className="text-gray-800 mx-3">O</span>
               <div className="border-t border-gray-300 w-1/2"></div>
