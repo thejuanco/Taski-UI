@@ -1,8 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import "material-symbols";
 
 const ConfirmUser = () => {
+
+  const [message, setMessage] = useState("")
+  const location = useLocation();
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const status = searchParams.get("status");
+
+    if (status === "success") {
+      setMessage("Hemos verificado tu cuenta exitosamente. Gracias por unirte a Taski. Ahora puedes comenzar a organizar tus proyectos y aumentar tu productividad.");
+    } else {
+      setMessage("Hubo un error en la confirmación");
+    }
+  }, [location]);
+
   return (
     <>
       <div className="flex justify-center items-center h-screen bg-gradient-to-b from-blue-50 to-white">
@@ -13,7 +28,7 @@ const ConfirmUser = () => {
               ¡Cuenta Verificada!
             </h1>
             <p className="text-center text-gray-500">
-            Hemos verificado tu cuenta exitosamente. Gracias por unirte a Taski. Ahora puedes comenzar a organizar tus proyectos y aumentar tu productividad.
+            {message}
             </p>
             <div className='border border-blue-400 rounded-lg w-full bg-blue-50 p-3 mt-4 '>
                 <p className='font-semibold text-blue-700 mb-2'>Próximos pasos:</p>
