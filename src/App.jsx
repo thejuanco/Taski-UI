@@ -5,6 +5,7 @@ import NotFound from './views/NotFound'
 import Login from './views/Auth/Login'
 import SignUp from './views/Auth/SignUp'
 import ForgotPassword from './views/Auth/ForgotPassword'
+import SendEmail from './views/Auth/SendEmail'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/auth/singin' element={<Login/>}/>
         <Route path='/auth/forgot-password' element={<ForgotPassword/>}/>
         <Route path='/auth/signup' element={<SignUp/>}/>
+        <Route path='/auth/send-email' element={<SendEmail/>}/>
       </Routes>
     </>
   )
