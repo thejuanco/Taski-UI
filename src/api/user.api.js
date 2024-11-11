@@ -11,3 +11,7 @@ const authAPI = axios.create({
 export const registerUser = async (data) => {
     return await authAPI.post('auth/createUser', data)
 }
+
+export const confirmUser = async (token, data) => {
+    return await authAPI.post(`auth/confirm/${token}`, data)
+} 

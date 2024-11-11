@@ -18,7 +18,7 @@ function App() {
         <Route path='/auth/forgot-password' element={<ForgotPassword/>}/>
         <Route path='/auth/signup' element={<SignUp/>}/>
         <Route path='/auth/send-email' element={<SendEmail/>}/>
-        <Route path='/auth/confirm-user/:token' element={<ConfirmUser/>}/>
+        <Route path='/auth/confirm-user' element={<ConfirmUser/>}/>
       </Routes>
     </>
   )
