@@ -1,9 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import NavBar from "../../components/Auth/NavBar";
 import { useForm } from "react-hook-form";
+import { registerUser } from "../../api/user.api";
 
 const SignUp = () => {
+
+  const navigate = useNavigate();
 
   const {
     register,
@@ -12,7 +15,22 @@ const SignUp = () => {
     watch
   } = useForm();
 
-  const onSubmit = data => console.log(data);
+  const onSubmit = data => {
+    try {
+      registerUser(data)
+      .then((response) => {
+        console.log(`Usuario registrado correctamente: ${response}`);
+        // Redirect to login page
+        // or display success message
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+      navigate('/auth/send-email')
+    } catch (error) {
+      console.log(error)
+    }
+  };
 
   return (
     <>
