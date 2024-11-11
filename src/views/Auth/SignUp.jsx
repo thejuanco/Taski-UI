@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../../components/Auth/NavBar";
 import { useForm } from "react-hook-form";
+import { registerUser } from "../../api/user.api";
 
 const SignUp = () => {
 
@@ -12,7 +13,18 @@ const SignUp = () => {
     watch
   } = useForm();
 
-  const onSubmit = data => console.log(data);
+  const onSubmit = data => {
+    registerUser(data)
+      .then((response) => {
+        console.log(`Usuario registrado correctamente: ${response}`);
+        // Redirect to login page
+        // or display success message
+      })
+      .catch((error) => {
+        console.error(error);
+        // Display error message
+      });
+  };
 
   return (
     <>

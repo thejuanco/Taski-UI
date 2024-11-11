@@ -9,5 +9,5 @@ const authAPI = axios.create({
 
 //Registrar los usuarios
 export const registerUser = async (data) => {
-    return await authAPI.post('/auth/createUser', data)
+    return await authAPI.post('auth/createUser', data)
 }
