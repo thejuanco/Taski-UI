@@ -50,7 +50,7 @@ const SignUp = () => {
               Colabora como nunca antes
             </h1>
             <h1 className="text-gray-500 text-2xl font-semibold ">
-              Inicia Sesión en Taski
+              Crea un cuenta en Taski
             </h1>
             <form onSubmit={handleSubmit(onSubmit)} className="mt-10 mb-6">
               <div className="space-y-4">
@@ -102,10 +102,11 @@ const SignUp = () => {
                 Continuar
               </button>
             </form>
-            {/* <div className="flex flex-row justify-between">
-              <Link to="/auth/signin    ">¿Ya tienes una cuenta?</Link>
+            <div className="flex flex-row justify-between">
+              <Link to="/auth/signup">Inicia sesión en taski</Link>
+              <Link to="/auth/forgot-password">Olvide mi contraseña</Link>
             </div>
-            <div className="flex items-center justify-between mb-6 mt-6">
+            {/* <div className="flex items-center justify-between mb-6 mt-6">
               <div className="border-t border-gray-300 w-1/2"></div>
               <span className="text-gray-800 mx-3">O</span>
               <div className="border-t border-gray-300 w-1/2"></div>
