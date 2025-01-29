@@ -1,5 +1,6 @@
 import React from 'react'
 import DemoSidebar from './DemoSidebar'
+import DemoTasks from './DemoTasks'
 
 const Demo = () => {
   return (
