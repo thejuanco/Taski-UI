@@ -37,7 +37,7 @@ const Home = () => {
                 </span>
               </Link>
               <Link
-                to="/dashboard"
+                to="/demo"
                 className="py-2 px-6 flex font-semibold items-center rounded-lg border border-gray-300 hover:bg-gray-100"
               >
                 Ver demo

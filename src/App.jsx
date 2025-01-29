@@ -7,6 +7,8 @@ import SignUp from './views/Auth/SignUp'
 import ForgotPassword from './views/Auth/ForgotPassword'
 import SendEmail from './views/Auth/SendEmail'
 import ConfirmUser from './views/Auth/ConfirmUser'
+import Demo from './views/layouts/Demo/Demo'
+import DemoTasks from './views/layouts/Demo/DemoTasks'
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path='/auth/signup' element={<SignUp/>}/>
         <Route path='/auth/send-email' element={<SendEmail/>}/>
         <Route path='/auth/confirm-user' element={<ConfirmUser/>}/>
+        <Route path='/demo' element={<Demo/>}/>
+        <Route path='/demo/tasks' element={<DemoTasks/>}/>
       </Routes>
     </>
   )
