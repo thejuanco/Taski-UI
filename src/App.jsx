@@ -12,6 +12,7 @@ import DemoTasks from './views/layouts/Demo/DemoTasks'
 
 function App() {
   return (
+    //TODO: Separar las rutas segun la autenticacion del usuario
     <>
       <Routes>
         <Route path='/' element={<Home/>}/>
