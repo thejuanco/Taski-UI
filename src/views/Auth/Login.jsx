@@ -21,7 +21,7 @@ const Login = () => {
       <div>
         <NavBar />
         <div className="flex justify-center items-center">
-          <div className="mt-16 md:w-1/4 sm:w-1/2 sm:m-10">
+          <div className="mt-16 md:w-1/4 sm:w-1/2 sm:m-10 border p-6 rounded-xl shadow">
             <h1 className="text-black font-semibold text-2xl">
               Colabora como nunca antes
             </h1>
@@ -36,17 +36,19 @@ const Login = () => {
                   </label>
                   <input
                     className="w-full p-2 rounded-lg border"
-                    placeholder="Ingresa tu apellido"
+                    placeholder="ejemplo@correo.com"
                     {...register('email', { required: true })}
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="font-semibold" htmlFor="email">
-                    Contraseña*
-                  </label>
+                  <div className='flex justify-between'>
+                    <label className="font-semibold" htmlFor="email">
+                      Contraseña*
+                    </label>
+                    <Link to="/auth/forgot-password" className='text-gray-600 hover:underline'>Olvide mi contraseña</Link>
+                  </div>
                   <input
                     className="w-full p-2 rounded-lg border"
-                    placeholder="Ingresa tu apellido"
                     {...register('password', { required: true })}
                   />
                 </div>
@@ -55,15 +57,15 @@ const Login = () => {
                 Continuar
               </button>
             </form>
-            <div className="flex flex-row justify-between">
-              <Link to="/auth/signup">¿No tienes una cuenta?</Link>
-              <Link to="/auth/forgot-password">Olvide mi contraseña</Link>
+            <div className="flex justify-center">
+              <p>¿Aún no tienes cuenta?&nbsp;</p>
+              <Link to="/auth/signup" className='hover:underline'>Registrate</Link>
             </div>
-            <div className="flex items-center justify-between mb-6 mt-4">
+            {/* <div className="flex items-center justify-between mb-6 mt-4">
+              <div className="border-t border-gray-300 w-1/2"></div>  
+              <span className="text-gray-500 mx-3">O</span>
               <div className="border-t border-gray-300 w-1/2"></div>
-              <span className="text-gray-800 mx-3">O</span>
-              <div className="border-t border-gray-300 w-1/2"></div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
